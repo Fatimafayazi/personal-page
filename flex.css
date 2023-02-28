@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://bit.ly/hw4fatima");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    height: 200px;
+    flex-grow: 1;
+}
+
+.box1 {
+    flex-basis: 1400px;
+}
+
+.box2 {
+    flex-basis: 179px;
+}
+
+.box3 {
+    flex-basis: 599px;
+}
+
+.box4 {
+    flex-basis: 598px;
+}
+
+.box5 {
+    flex-basis: 1174px;
+}
+
+.box6 {
+    flex-basis: 214px;
+}
