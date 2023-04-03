@@ -3,13 +3,16 @@
     box-sizing: border-box;
     padding: 0px;
 }
+img:nth-of-type(1) {
+    display: none;
+}
 body {
-    background-image: url(https://cdn.imgchest.com/files/g4z9cwlpm72.png);
+    background-image: none;
+    opacity: 1;
     background-repeat: no-repeat;
     max-width: 1285px;
     min-height: 1566px;
     font-size: 2rem;
-    opacity: .5;
     color: blue;
 }
 .container {
@@ -43,19 +46,20 @@ body {
 ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    float: left;
     list-style-type: none;
-    justify-content: start;
-    align-items: center;
     height: 100%;
     font-size: 15PX;
-    color: white;
     font-family: Arial;
     font-weight: 700;
     line-height: 60%;
-    padding-left: 32px;
-    padding-top: 9px;
+    flex-direction: column;
+    background-color: #007bb6;
+}
+li {
+    padding: 30px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
 }
 .box1 {
     grid-area: one;
