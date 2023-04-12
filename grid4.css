@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body > img:nth-of-type(1) {
+    display: none;
+}
+body {
+    background-image: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    max-width: 1285px;
+    min-height: 1566px;
+    font-size: 2rem;
+    color: blue;
+}
+.container {
+    display: grid;
+    grid-template-rows: minmax(50px, auto) minmax(120px, auto) minmax(500px, auto) minmax(290px, auto) minmax(470px, auto);
+    grid-template-columns: minmax(20px, 375px) minmax(20px, 985px);
+    grid-template-areas:
+    "one one"
+    "two six"
+    "three four"
+    "eight seven"
+    "eight five";
+}
+.container > * {
+    border: 2px dashed blue;
+}
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+    }
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    height: 100%;
+    font-size: 15PX;
+    font-family: Arial;
+    font-weight: 700;
+    line-height: 60%;
+    flex-direction: column;
+    background-color: #007bb6;
+}
+li {
+    padding: 30px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}   
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+}
+.box2 img{
+    margin-top: 24px;
+    margin-left: 10px;
+
+}
+.box3 {
+    grid-area: three;
+    background: #007bb6;
+}
+.box4 {
+    grid-area: four;
+    background-image: url(https://th.bing.com/th/id/OIG.HwLI7EgB79cnpzB0ItBn?pid=ImgGn);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-color: gray;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .8em;
+    color: white;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
