@@ -57,7 +57,6 @@ ul {
     padding-left: 32px;
     padding-top: 9px;
 }
-
 .box1 {
     grid-area: one;
 }
@@ -87,6 +86,19 @@ ul {
     padding-left: 30px;
     padding-top: 20px;
 }
+.box7 {
+    display: grid;
+    row-gap: 50px;
+    column-gap: 10px;
+    padding-top: 88px;
+    padding-left: 15px;
+    grid-template-rows: 70px 70px 70px;
+    grid-template-columns: 150px 300px;
+    grid-template-areas: 
+    "p1 t1"
+    "p2 t2"
+    "p3 t3";
+}
 .pic1 {
     grid-area: p1;
 }
@@ -105,20 +117,6 @@ ul {
 .txt3 {
     grid-area: t3;
 }
-.box7 {
-    display: grid;
-    row-gap: 50px;
-    column-gap: 10px;
-    padding-top: 88px;
-    padding-left: 15px;
-    padding-bottom: -100px;
-    grid-template-rows: 70px 70px 70px;
-    grid-template-columns: 150px 300px;
-    grid-template-areas: 
-    "p1 t1"
-    "p2 t2"
-    "p3 t3";
-}
 .box7 img {
     width: 97%;
     height: 130%;
@@ -129,4 +127,62 @@ ul {
     font-family: 'ProximaNova',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 19.5px;
     padding-right: 10px;
+}
+.box5 {
+    display: grid;
+    row-gap: 120px;
+    column-gap: 10px;
+    padding-top: 80px;
+    padding-left: 200px;
+    grid-template-rows: 148px 150px 150px;
+    grid-template-columns: 515px 150px;
+    grid-template-areas: 
+    "t4 p4"
+    "t5 p5"
+    "t6 p6";
+}
+.pic4 {
+    grid-area: p4;
+}
+.txt4 {
+    grid-area: t4;
+}
+.pic5 {
+    grid-area: p5;
+}
+.txt5 {
+    grid-area: t5;
+}
+.pic6 {
+    grid-area: p6;
+}
+.txt6 {
+    grid-area: t6;
+}
+.box5 img {
+    width: 140%;
+    height: 110%;
+}
+.box5 p{
+    color: #666;
+    font-weight: 500;
+    font-family: 'ProximaNova',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+.box5 h2{
+    color: black;
+    font-weight: 400;
+    font-family: 'ProximaNova',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 27px;
+    padding-right: 10px;
+}
+.space {
+    display: inline-block;
+    width: 6px;
+}
+.end {
+    color: #007bb6;
 }
